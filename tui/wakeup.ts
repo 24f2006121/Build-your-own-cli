@@ -40,7 +40,7 @@ export async function runWakeup() {
         ]
     });
 
-    if (isCancel(mode || mode === "exit")){
+    if (isCancel(mode) || mode === "exit") {
         console.log(chalk.yellow("Operation cancelled. Exiting..."));
         return;
     }
